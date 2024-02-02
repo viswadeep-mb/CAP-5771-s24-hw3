@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "cap-5771-s24-hw2-grading"
+name = "cap-5771-s24-hw3-grading"
 version = "0.1.0"
-description = "Homework 2 grading, CAP-5771, Spring 2024"
+description = "Homework 3 grading, CAP-5771, Spring 2024"
 authors = ["erlebach <gordon.erlebach@gmail.com>"]
 readme = "README.md"
 
