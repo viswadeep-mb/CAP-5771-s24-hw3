@@ -11,13 +11,13 @@ def question1():
     answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Hierarchical clustering allows for the detection of outliers at various levels of the hierarchy. Outliers may form small, separate clusters or singletons, but their impact on the overall clustering structure is often limited."
+    answers["(a) explain"] = "In agglomerative clustering, outliers typically persist as singleton clusters or small clusters, remaining separate until higher levels of the clustering hierarchy. This facilitates the identification and removal of outliers. In contrast, the standard K-means clustering algorithm assigns each outlier to a cluster, potentially distorting the centroid of the cluster."
 
     # type: bool (True/False)
-    answers["(b)"] = False
+    answers["(b)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Different runs of agglomerative hierarchical clustering procedures can produce different clusterings due to the nature of the algorithm"
+    answers["(b) explain"] = "Unless there are ties in the proximity values, agglomerative hierarchical techniques do not involve any random elements in their algorithms"
 
     # type: bool (True/False)
     answers["(c)"] = False
@@ -56,10 +56,10 @@ def question1():
     answers["(h) explain"] = "In K-means clustering, the total variance can be decomposed into the sum of the SSE (within-cluster variance) and the BSS (between-cluster variance), which remains constant"
 
     # type: bool (True/False)
-    answers["(i)"] = False
+    answers["(i)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(i) explain"] = "While improving cohesion in K-means might indicate smaller SSE, it doesn't necessarily guarantee improved separation (larger SSB). The two are related but not strictly dependent on each other."
+    answers["(i) explain"] = "Enhancing cohesion in k-means clustering generally results in heightened separation, as data points tend to cluster more closely within their assigned clusters, thereby making the centroids more distinguishable from each other."
 
     return answers
 
