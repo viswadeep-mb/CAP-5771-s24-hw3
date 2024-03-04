@@ -71,19 +71,19 @@ def question2():
     answers = {}
 
     # type: bool (True/False)
-    answers["(a)"] = -1
+    answers["(a)"] = True
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = ""
 
     # type: bool (True/False)
-    answers["(b)"] = -1
+    answers["(b)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "Since it is a non-globular shape, each of the two final clusters will not consist only of points from one of the shaded regions."
 
     # type: bool (True/False)
-    answers["(c)"] = -1
+    answers["(c)"] = True
 
     # type: explanatory string (at least four words)
     answers["(c) explain"] = ""
@@ -116,28 +116,28 @@ def question4():
     answers = {}
 
     # type: int
-    answers["(a) Circle (a)"] = 0
+    answers["(a) Circle (a)"] = 1
 
     # type: int
-    answers["(a) Circle (b)"] = 0
+    answers["(a) Circle (b)"] = 1
 
     # type: int
-    answers["(a) Circle (c)"] = 0
+    answers["(a) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "The centroids in Circle B are expected to shift towards the centroids of Circle A and Circle C during convergence, owing to the uniform distribution of points within each circle. Consequently, after convergence, each circle should ideally have one centroid, as the centroids redistribute to achieve a balanced distribution of points within each circle."
 
     # type: int
-    answers["(b) Circle (a)"] = 0
+    answers["(b) Circle (a)"] = 1
 
     # type: int
-    answers["(b) Circle (b)"] = 0
+    answers["(b) Circle (b)"] = 1
 
     # type: int
-    answers["(b) Circle (c)"] = 0
+    answers["(b) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "Circle A centroid will remain unchanged. In the case of Circle B, which initially has two centroids, one of them is likely to shift towards Circle C, promoting a balanced distribution of points. Circle C, initially without centroids, is expected to acquire one centroid from Circle B. Consequently, post-convergence, each circle is anticipated to have a single centroid."
 
     # type: int
     answers["(c) Circle (a)"] = 0
@@ -146,10 +146,10 @@ def question4():
     answers["(c) Circle (b)"] = 0
 
     # type: int
-    answers["(c) Circle (c)"] = 0
+    answers["(c) Circle (c)"] = 2
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "Considering the proximity of Circles A and B, it is probable that the centroid initially located in Circle A would shift towards the midpoint between Circles A and B in the initial stages of the k-means process. In contrast, Circle C, situated farther from Circle B, may exert less influence on the centroid redistribution, maintaining its two centroids"
 
     return answers
 
@@ -161,16 +161,16 @@ def question5():
     answers = {}
 
     # type: set
-    answers["(a)"] = set()
+    answers["(a)"] = set('Group A','Group B')
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Groups A and B will be merged since the distance, calculated from the furthest right point in A to the furthest left point in B, is shorter than the distances between A and C, as well as between B and C."
 
     # type: set
-    answers["(b)"] = set()
+    answers["(b)"] = set('Group A','Group C')
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "Groups A and C will be consolidated as they exhibit the shortest complete link distance, determined by measuring from a boundary point in A to the farthest point in C. "
 
     return answers
 
