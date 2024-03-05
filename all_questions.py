@@ -26,7 +26,7 @@ def question1():
     answers["(c) explain"] = "Agglomerative hierarchical clustering tends to be more time and memory-consuming compared to k-means, and efficiency depends on the specific characteristics of the data"
 
     # type: bool (True/False)
-    answers["(d)"] = False
+    answers["(d)"] = True
 
     # type: explanatory string (at least four words)
     answers["(d) explain"] = "When a cluster is split during a post-processing step in k-means, the Sum of Squared Errors (SSE) of the clustering decreases because the points are reassigned to centroids, reducing the overall distance"
